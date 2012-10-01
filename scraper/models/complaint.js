@@ -6,7 +6,7 @@ var Mongoose = require('mongoose')
 // Schema for the 'Complaint' Model
 var ComplaintSchema = new Schema({
 	// Complaint Fields
-	text: String
+	text: { type: String, index: { unique: true, sparse: true }}
 	, author_id: ObjectId
 	, category: String
 	, airline: String
@@ -14,8 +14,8 @@ var ComplaintSchema = new Schema({
 	, likes: Number
 	, comments: []
 	, tweet: {
-		link: { type: String, index: { unique: true }},
-		tweet_id:{ type: Number, index: { unique: true }}
+		link: { type: String, index: { unique: true, sparse: true }}
+		, tweet_id:{ type: Number, index: { unique: true, sparse: true }}
 	}
 	, timestamp: { type: Date, default: Date.now }
 	

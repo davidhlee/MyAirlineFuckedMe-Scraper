@@ -28,7 +28,7 @@ twit.stream('statuses/sample', function(stream) {
 });
 */
 
-twit.stream('statuses/filter', { track: 'mafm,myairlinefuckedme' }, function(stream) {
+twit.stream('statuses/filter', { track: '#mafm,myairlinefuckedme' }, function(stream) {
   stream.on('data', function (data) {
 
 	console.log(data);
