@@ -14,8 +14,8 @@ var ComplaintSchema = new Schema({
 	, likes: Number
 	, comments: []
 	, tweet: {
-		link: String,
-		tweet_id: Number
+		link: { type: String, index: { unique: true }},
+		tweet_id:{ type: Number, index: { unique: true }}
 	}
 	, timestamp: { type: Date, default: Date.now }
 	
