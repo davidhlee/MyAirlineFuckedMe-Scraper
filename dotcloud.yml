@@ -1,0 +1,10 @@
+nodejs:
+  type: custom
+  buildscript: nodejs/builder
+  ports:
+    www: http
+  process: node twitter_stream.js
+  approot: scraper
+  node_version: v0.6.5
+db:
+  type: mongodb
