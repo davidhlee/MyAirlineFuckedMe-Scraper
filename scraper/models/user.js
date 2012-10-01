@@ -13,6 +13,7 @@ var UserSchema = new Schema({
 	, twitter: {
 		id: Number
 		, accessToken: String
+		, tokenSecret: String
 		, id_str: String
 		, name: String
 		, screen_name: String
