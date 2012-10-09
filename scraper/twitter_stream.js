@@ -7,6 +7,7 @@ var Mongoose = require('mongoose')
   
 /****************************************************** App Initialization Code *******************************************************/
 Mongoose.connect('mongodb://david:2848@myairline-FSAQHURB-db-0.dotcloud.com:37732/myairlinefuckedme');
+//Mongoose.connect('mongodb://david:2848@myairlinelive-FSAQHURB-db-0.dotcloud.com:38065/myairlinefuckedme');
 //Mongoose.connect('mongodb://localhost/myairlinefuckedme');
 
 // Declare all the app's MongooseJS Models
