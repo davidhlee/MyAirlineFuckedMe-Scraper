@@ -15,7 +15,7 @@ var ComplaintSchema = new Schema({
 	, comments: []
 	, tweet: {
 		link: { type: String, index: { unique: true, sparse: true }}
-		, tweet_id:{ type: Number, index: { unique: true, sparse: true }}
+		, tweet_id:{ type: Number}
 	}
 	, timestamp: { type: Date, default: Date.now }
 	
